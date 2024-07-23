@@ -3,7 +3,7 @@ GOPATH      := $(shell go env GOPATH)
 BIN_DIR             ?= $(shell pwd)/bin
 BIN_NAME            ?= s3_exporter$(shell go env GOEXE)
 DOCKER_IMAGE_NAME   ?= s3-exporter
-DOCKER_IMAGE_TAG    ?= $(subst /,-,$(shell git rev-parse --abbrev-ref HEAD))
+DOCKER_IMAGE_TAG    ?= "latest"
 
 # Race detector is only supported on amd64.
 RACE := $(shell test $$(go env GOARCH) != "amd64" || (echo "-race"))

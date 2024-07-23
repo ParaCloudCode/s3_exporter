@@ -1,4 +1,4 @@
-module github.com/ribbybibby/s3_exporter
+module github.com/ParaCloudCode/s3_exporter
 
 go 1.15
 
